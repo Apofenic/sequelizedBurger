@@ -35,8 +35,8 @@ router.put("/burgers/update", function(req, res) {
           id: req.body.id
         }
       }).then(function(data) {
-        res.json(data);
-      }); res.redirect("/");
+        res.redirect("/");
+      }); 
 });
 
 module.exports = router;
